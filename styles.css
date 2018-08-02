@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+    margin: 5px;
+}  
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float:left;
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.profile {
+    clear:both;
+    border: 1px solid blue;
+}
+
+.projectsBox {
+    clear:both;
+    border: 1px solid blue;
+}
+
+.resumeBox{
+    clear:both;
+    border: 1px solid blue;
+}
