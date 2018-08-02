@@ -8,6 +8,10 @@ h1 {
     margin: 5px;
 }  
 
+nav {
+    border: 1px solid green;
+}
+
 nav ul {
     list-style: none;
 }
@@ -26,14 +30,47 @@ nav ul li a {
 .profile {
     clear:both;
     border: 1px solid blue;
+    margin: 10px 5px 0 5px;
+    text-align:center;
+}
+
+.profileText{
+    border: 1px solid red;
 }
 
 .projectsBox {
     clear:both;
     border: 1px solid blue;
+    margin: 10px 5px 0 5px;
+    text-align:center;
+}
+
+.singleProject{
+    border: 1px solid red;
 }
 
 .resumeBox{
     clear:both;
     border: 1px solid blue;
+    margin: 10px 5px 0 5px;
+}
+
+.workHistory{
+    border: 1px solid red;
+}
+
+.job{
+    border: 1px solid purple;
+}
+
+.education{
+    border: 1px solid red;
+}
+
+.school{
+    border: 1px solid purple;
+}
+
+.clearFix{
+    clear:both;
 }
