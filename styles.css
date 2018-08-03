@@ -30,6 +30,10 @@ nav ul li {
     text-align: center;
 }
 
+nav ul li:hover {
+    background:grey;
+}
+
 nav ul li a {
     text-decoration: none;
 }
@@ -80,6 +84,14 @@ nav ul li a {
     margin: 10px;
 }
 
+.projectSnapshot{
+    padding:10px;
+}
+
+.projectLink{
+    text-decoration: none;
+}
+
 .resumeBox{
         border: 1px solid blue;
         margin: 10px 5px 0 5px;
@@ -104,10 +116,26 @@ nav ul li a {
     border: 1px solid purple;
 }
 
-.clearFix{
-    clear:both;
+footer ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+footer ul li{
+border: 1px solid blue;
+    margin: 0;
+    padding: 5px;
+    flex-grow:1;
+    text-align: center;
+}
+footer ul li:hover{
+    background-color:grey;
+}
+footer ul li a {
+    text-decoration: none;
+}
 /* break point for smaller devices */
 @media screen and (max-width: 376px) {
     body {
@@ -140,6 +168,7 @@ nav ul li a {
     .singleProject{
         max-width:40%;
         display: flex;
+        align-items: center;
     }
     .resumeBox{
       max-width: 765px;
