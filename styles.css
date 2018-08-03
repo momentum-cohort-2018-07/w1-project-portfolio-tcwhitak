@@ -6,6 +6,10 @@
     padding: 0;
   }
 
+body{
+    background-color:#F3F7F0;
+    color:#19323C;
+}
 
 h1 {
     margin: 0;
@@ -13,7 +17,7 @@ h1 {
 }  
 
 nav {
-    border: 1px solid green;
+    margin-top: 40px;
 }
 
 nav ul {
@@ -23,19 +27,24 @@ nav ul {
 }
 
 nav ul li {
-    border: 1px solid blue;
     margin: 0;
     padding: 5px;
     flex-grow:1;
     text-align: center;
 }
 
-nav ul li:hover {
-    background:grey;
+nav ul li:first-child {
+    text-align: left;
+    padding: 5px 10px;
 }
 
 nav ul li a {
     text-decoration: none;
+    color:#19323C;
+}
+
+nav ul li a:hover {
+    text-shadow: 1px 1px 3px #19323C;
 }
 
 .flexContainer {
@@ -46,20 +55,25 @@ nav ul li a {
 }
 
 .profile {
-    border: 1px solid blue;
     margin: 10px 5px 0 5px;
     text-align:center;
+    color:#19323C;
 }
 
 #profileHeadshot {
-    padding:10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 .profileText{
-    border: 1px solid red;
+    background-color: #8DAA91;
+    color: #19323C;
+    border-radius: 8px;
     max-width: 80%;
     margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profileText p {
@@ -68,36 +82,55 @@ nav ul li a {
     padding:5px;
 }
 
+.projectsHeader{
+    padding: 5px 10px;
+    text-align:center;
+}
+
 .projectsBox {
-    border: 1px solid blue;
     margin: 10px 5px 0 5px;
     text-align:center;
     display:flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    color:#19323C;
 }
 
 .singleProject{
-    border: 1px solid red;
+    background-color: #19323C;
+    border: 1px solid #5E5D5C;
+    border-radius: 8px;
     max-width:70%;
     margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.singleProjectText{
+    margin: 5px;
+    background-color: #F3F7F0;
+    border-radius: 8px;
+
 }
 
 .projectSnapshot{
-    padding:10px;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .projectLink{
     text-decoration: none;
+    color:#5E5D5C;
 }
-
+.resumeHeader{
+    text-align: center;
+}
 .resumeBox{
-        border: 1px solid blue;
         margin: 10px 5px 0 5px;
         display:flex;
         flex-direction:column;
         flex-wrap: wrap;
+        background-color: #F3F7F0;
     }
 
 .workHistory{
@@ -124,23 +157,23 @@ footer ul {
 }
 
 footer ul li{
-border: 1px solid blue;
     margin: 0;
     padding: 5px;
     flex-grow:1;
     text-align: center;
 }
-footer ul li:hover{
-    background-color:grey;
-}
+
 footer ul li a {
     text-decoration: none;
+    color:#19323C;
 }
+
+footer ul li a:hover{
+    text-shadow: 1px 1px 3px #19323C;
+}
+
 /* break point for smaller devices */
 @media screen and (max-width: 376px) {
-    body {
-        background-color:teal;
-    }
 
     nav ul li {
         align-content: bottom;
@@ -150,9 +183,6 @@ footer ul li a {
 /* Break point for Desktop viewers */
 
 @media screen and (min-width: 768px) {
-    body {
-        background-color:limegreen;
-    }
 
     .flexContainer {
         display:flex;
@@ -166,10 +196,14 @@ footer ul li a {
         max-width: 60%;
     }
     .singleProject{
-        max-width:40%;
+        max-width:45%;
         display: flex;
         align-items: center;
     }
+    /* .singleProjectText {
+        min-width: 30%;
+    } */
+
     .resumeBox{
       max-width: 765px;
     }
