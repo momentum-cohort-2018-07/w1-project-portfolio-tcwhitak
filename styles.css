@@ -6,8 +6,10 @@
     padding: 0;
   }
 
+
 h1 {
-    margin: 5px;
+    margin: 0;
+    flex-grow:4;
 }  
 
 nav {
@@ -16,46 +18,75 @@ nav {
 
 nav ul {
     list-style: none;
+    display:flex;
+    justify-content: flex-start;
 }
 
 nav ul li {
-    float:left;
     border: 1px solid blue;
-    margin: 5px;
+    margin: 0;
     padding: 5px;
+    flex-grow:1;
+    text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
 }
 
+.flexContainer {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
 .profile {
-    clear:both;
     border: 1px solid blue;
     margin: 10px 5px 0 5px;
     text-align:center;
 }
+
+#profileHeadshot {
+    padding:10px;
+}
+
 
 .profileText{
     border: 1px solid red;
+    max-width: 80%;
+    margin: 5px;
+}
+
+.profileText p {
+    text-align: left;
+    text-indent: 10px;
+    padding:5px;
 }
 
 .projectsBox {
-    clear:both;
     border: 1px solid blue;
     margin: 10px 5px 0 5px;
     text-align:center;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .singleProject{
     border: 1px solid red;
+    max-width:70%;
+    margin: 10px;
 }
 
 .resumeBox{
-    clear:both;
-    border: 1px solid blue;
-    margin: 10px 5px 0 5px;
-}
+        border: 1px solid blue;
+        margin: 10px 5px 0 5px;
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
 
 .workHistory{
     border: 1px solid red;
@@ -77,10 +108,40 @@ nav ul li a {
     clear:both;
 }
 
+/* break point for smaller devices */
+@media screen and (max-width: 376px) {
+    body {
+        background-color:teal;
+    }
+
+    nav ul li {
+        align-content: bottom;
+    }
+}
+
 /* Break point for Desktop viewers */
 
 @media screen and (min-width: 768px) {
     body {
         background-color:limegreen;
+    }
+
+    .flexContainer {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .profileText{
+        max-width: 60%;
+    }
+    .singleProject{
+        max-width:40%;
+        display: flex;
+    }
+    .resumeBox{
+      max-width: 765px;
     }
 }
