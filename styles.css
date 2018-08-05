@@ -7,6 +7,7 @@
   }
 
 body{
+    font-family: Courier, Monaco, monospace;
     background-color:#F3F7F0;
     color:#19323C;
 }
@@ -34,7 +35,7 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    text-align: left;
+    text-align: center;
     padding: 5px 10px;
 }
 
@@ -62,6 +63,7 @@ nav ul li a:hover {
 
 #profileHeadshot {
     margin: 10px;
+    max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -116,6 +118,7 @@ nav ul li a:hover {
 .projectSnapshot{
     margin: 10px;
     border-radius: 8px;
+    max-width: 200px;
 }
 
 .projectLink{
@@ -126,27 +129,68 @@ nav ul li a:hover {
     text-align: center;
 }
 .resumeBox{
-        margin: 10px 5px 0 5px;
+        margin: 10px auto;
         display:flex;
         flex-direction:column;
         flex-wrap: wrap;
         background-color: #F3F7F0;
+        line-height: 25px;
     }
 
+.resumeBox ul {
+    list-style:none;
+}
+
 .workHistory{
-    border: 1px solid red;
 }
 
 .job{
-    border: 1px solid purple;
+}
+
+.jobFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.jobTitle {
+    padding: 0 10px 0 0;
+}
+
+.jobCompany {
+    padding: 0 10px 0 0;
+}
+
+.jobLocation {
+    padding: 0 10px 0 0;
+}
+
+.jobDate {
+    padding: 0 10px 0 0;
+}
+
+.jobDescr {
+
 }
 
 .education{
-    border: 1px solid red;
 }
 
 .school{
-    border: 1px solid purple;
+}
+
+.schoolFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.schoolTitle {
+    padding: 0 10px 0 0;
+}
+
+.schoolDate {
+    padding: 0 10px 0 0;
 }
 
 footer ul {
