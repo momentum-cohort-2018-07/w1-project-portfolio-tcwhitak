@@ -140,12 +140,12 @@ nav ul li a:hover {
 .resumeBox ul {
     list-style:none;
 }
-
+/* 
 .workHistory{
 }
 
 .job{
-}
+} */
 
 .jobFlex {
     display: flex;
@@ -168,7 +168,7 @@ nav ul li a:hover {
 .jobDate {
     padding: 0 10px 0 0;
 }
-
+/* 
 .jobDescr {
 
 }
@@ -177,7 +177,7 @@ nav ul li a:hover {
 }
 
 .school{
-}
+} */
 
 .schoolFlex {
     display: flex;
