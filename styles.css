@@ -1,0 +1,254 @@
+/* initial styling for mobile devices */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    font-family: Courier, Monaco, monospace;
+    background-color:#F3F7F0;
+    color:#19323C;
+}
+
+h1 {
+    margin: 0;
+    flex-grow:4;
+}  
+
+nav {
+    margin-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 5px;
+    flex-grow:1;
+    text-align: center;
+}
+
+nav ul li:first-child {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#19323C;
+}
+
+nav ul li a:hover {
+    text-shadow: 1px 1px 3px #19323C;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.profile {
+    margin: 10px 5px 0 5px;
+    text-align:center;
+    color:#19323C;
+}
+
+#profileHeadshot {
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.profileText{
+    background-color: #8DAA91;
+    color: #19323C;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profileText p {
+    text-align: left;
+    text-indent: 10px;
+    padding:5px;
+}
+
+.projectsHeader{
+    padding: 5px 10px;
+    text-align:center;
+}
+
+.projectsBox {
+    margin: 10px 5px 0 5px;
+    text-align:center;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color:#19323C;
+}
+
+.singleProject{
+    background-color: #19323C;
+    border: 1px solid #5E5D5C;
+    border-radius: 8px;
+    max-width:70%;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.singleProjectText{
+    margin: 5px;
+    background-color: #F3F7F0;
+    border-radius: 8px;
+
+}
+
+.projectSnapshot{
+    margin: 10px;
+    border-radius: 8px;
+    max-width: 200px;
+}
+
+.projectLink{
+    text-decoration: none;
+    color:#5E5D5C;
+}
+.resumeHeader{
+    text-align: center;
+}
+.resumeBox{
+        margin: 10px auto;
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        background-color: #F3F7F0;
+        line-height: 25px;
+    }
+
+.resumeBox ul {
+    list-style:none;
+}
+/* 
+.workHistory{
+}
+
+.job{
+} */
+
+.jobFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.jobTitle {
+    padding: 0 10px 0 0;
+}
+
+.jobCompany {
+    padding: 0 10px 0 0;
+}
+
+.jobLocation {
+    padding: 0 10px 0 0;
+}
+
+.jobDate {
+    padding: 0 10px 0 0;
+}
+/* 
+.jobDescr {
+
+}
+
+.education{
+}
+
+.school{
+} */
+
+.schoolFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.schoolTitle {
+    padding: 0 10px 0 0;
+}
+
+.schoolDate {
+    padding: 0 10px 0 0;
+}
+
+footer ul {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+footer ul li{
+    margin: 0;
+    padding: 5px;
+    flex-grow:1;
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:#19323C;
+}
+
+footer ul li a:hover{
+    text-shadow: 1px 1px 3px #19323C;
+}
+
+/* break point for smaller devices */
+@media screen and (max-width: 376px) {
+
+    nav ul li {
+        align-content: bottom;
+    }
+}
+
+/* Break point for Desktop viewers */
+
+@media screen and (min-width: 768px) {
+
+    .flexContainer {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .profileText{
+        max-width: 60%;
+    }
+    .singleProject{
+        max-width:45%;
+        display: flex;
+        align-items: center;
+    }
+    /* .singleProjectText {
+        min-width: 30%;
+    } */
+
+    .resumeBox{
+      max-width: 765px;
+    }
+}
